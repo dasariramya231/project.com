@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <h1>Students Form   
+    </h1>
+</header>
+    
+<form name ="google-sheet">
+    
+    <div class="outerbox">
+        <div class="ficon">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <div class="fouterbox">
+           <div class="main">
+             <div class="left">
+                 <h2>     
+                           <input type="text" name="Name" placeholder="Name" style="height: 22px;width: 150px;"><br><br>
+                           <input type="text" name="Roll" placeholder="Roll Number" style="height: 22px;width: 150px;"><br><br>
+                          <select id="sub"   style="height: 22px;width: 150px"  onchange="populate(this);" >
+                               <option value="">--choose subject--</option>
+                                <option value="sub1">subject1</option>
+                                <option value="sub2">subject2</option>
+                          </select><br><br>
+                          <p>Mid 1 Marks :</p><br>
+                          <select id="que1"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                            <option value="">--Choose que--</option>
+                            <option value="Q1">Q1</option>
+                             <option value="Q2">Q2</option>
+                            </select>
+                         <script src="in.js"></script>
+                            <span> <input type="number" id="Q1_id" name="Q1" placeholder="Q1 or Q2" style="height: 22px;width: 150px;"></span>
+                              <br>
+                               <br> 
+
+                              <select id="que1_a"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                <option value="">--Choose que--</option>
+                                <option value="Q1_a">Q1_a</option>
+                                 <option value="Q2_a">Q2_a</option>
+                                </select>
+                             <script src="in.js"></script>
+                                <span> <input type="number" id="Q1_a_id" name="Q1_a" placeholder="Q1_a or Q2_a" style="height: 22px;width: 150px;"></span></br>
+                                  <br>
+                                  
+                                  <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                    <option value="">--Choose que--</option>
+                                    <option value="Q1_b">Q1_b</option>
+                                     <option value="Q2_b">Q2_b</option>
+                                    </select>
+                                 <script src="in.js"></script>
+                                    <span> <input type="number" id="Q1_b_id" name="Q1_b" placeholder="Q1_b or Q2_b" style="height: 22px;width: 150px;"></span>
+                                     </br>
+                                      <br>
+                                      <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                       <option value="">--Choose que--</option>
+                                       <option value="Q3">Q3</option>
+                                        <option value="Q4">Q4</option>
+                                       </select>                                     
+                                  <script src="in.js"></script>
+                                       <span> <input type="number" id="Q3_id" name="Q3" placeholder="Q3 or Q4" style="height: 22px;width: 150px;"></span>
+                                        </br>
+                                         <br>
+                                         <button type="button" name="" class="submit" style="border-radius:20px" onclick="openPopup()">submit</button><br>
+                                         <div class="popup" id="popup">
+                                             <img src="tickmark.jpg">
+                                             <h2>Thank you</h2>
+                                             <p>Your details has been sucessfully submitted.</p>
+                                             <button type="botton" onclick="closePopup()">ok</button>
+                                            </div>
+                           
+                   </h2>
+            </div>
+            <div class="center">
+                 <h2>
+                   
+                      <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                        <option value="">--Choose que--</option>
+                        <option value="Q3_a">Q3_a</option>
+                         <option value="Q4_a">Q4_a</option>
+                        </select>
+                     <script src="in.js"></script>
+                        <span> 
+                          <input type="number" id="Q3_a_id" name="Q3_b" placeholder="Q3_a or Q4_a" style="height: 22px;width: 150px;"></span>
+                         </br>
+                          <br>
+                          <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                            <option value="">--Choose que--</option>
+                            <option value="Q3_b">Q3_b</option>
+                             <option value="Q4_b">Q4_b</option>
+                            </select>
+                            <script src="in.js"></script>
+                            <span> <input type="number" id="Q3_b_id" name="Q3_b" placeholder="Q3_b or Q4_b" style="height: 22px;width: 150px;"></span>
+                             </br>
+                              <br>
+
+                              <select id="que1_a"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                <option value="">--Choose que--</option>
+                                <option value="Q5">Q5</option>
+                                 <option value="Q6">Q6</option>
+                                </select>
+                             <script src="in.js"></script>
+                                <span> <input type="number" id="Q5_id" name="Q5" placeholder="Q5 or Q6" style="height: 22px;width: 150px;"></span></br>
+                                  <br>
+                               
+                                  <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                    <option value="">--Choose que--</option>
+                                    <option value="Q5_a">Q5_a</option>
+                                     <option value="Q6_a">Q6_a</option>
+                                    </select>
+                                 <script src="in.js"></script>
+                                    <span> 
+                                      <input type="number" id="Q5_a_id" name="Q5_b" placeholder="Q5_a or Q6_a" style="height: 22px;width: 150px;"></span>
+                                     </br>
+                                      <br>
+                                      <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                                        <option value="">--Choose que--</option>
+                                        <option value="Q5_b">Q5_b</option>
+                                         <option value="Q6_b">Q6_b</option>
+                                        </select>
+                                        <script src="in.js"></script>
+                                        <span> <input type="number" id="Q5_b_id" name="Q3_b" placeholder="Q5_b or Q6_b" style="height: 22px;width: 150px;"></span>
+                                         </br>
+                                          <br>
+                                          <input type="number" name="quiz1" placeholder="quiz1" style="height: 22px;width: 150px;"><br><br>
+                                          <input type="number" name="assignment1" placeholder="assignment1" style="height: 22px;width: 150px;"><br><br>
+                     
+                 </h2>
+            </div>
+            <div class="right">
+                <h2>
+                  <p>Mid 2 Marks :</p><br>
+                  <select id="que1"   style="height: 22px;width: 200px"  onchange="populat(this);" >
+                    <option value="">--Choose que--</option>
+                    <option value="q1">q1</option>
+                     <option value="q2">q2</option>
+                    </select>
+                 <script src="in.js"></script>
+                    <span> <input type="number" id="q1_id" name="q1" placeholder="q1 or q2" style="height: 22px;width: 150px;"></span>
+                      <br>
+                       <br> 
+
+                      <select id="que1_a"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                        <option value="">--Choose que--</option>
+                        <option value="q1_a">q1_a</option>
+                         <option value="q2_a">q2_a</option>
+                        </select>
+                     <script src="in.js"></script>
+                        <span> <input type="number" id="q1_a_id" name="q1_a" placeholder="Q1_a or Q2_a" style="height: 22px;width: 150px;"></span></br>
+                          <br>
+                          
+                          <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                            <option value="">--Choose que--</option>
+                            <option value="q1_b">q1_b</option>
+                             <option value="q2_b">q2_b</option>
+                            </select>
+                         <script src="in.js"></script>
+                            <span> <input type="number" id="q1_b_id" name="q1_b" placeholder="Q1_b or Q2_a" style="height: 22px;width: 150px;"></span>
+                             </br>
+                              <br>
+
+                  <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                    <option value="">--Choose que--</option>
+                    <option value="q3">q3</option>
+                     <option value="q4">q4</option>
+                    </select>
+                   
+                 <script src="in.js"></script>
+                    <span> <input type="number" id="q3_id" name="q3" placeholder="Q3 or Q4" style="height: 22px;width: 150px;"></span>
+                     </br>
+                      <br>
+                      <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                        <option value="">--Choose que--</option>
+                        <option value="q3_a">q3_a</option>
+                         <option value="q4_a">q4_a</option>
+                        </select>
+                     <script src="in.js"></script>
+                        <span> 
+                          <input type="number" id="q3_a_id" name="q3_b" placeholder="Q3_a or Q4_a" style="height: 22px;width: 150px;"></span>
+                         </br>
+                          <br>
+                          <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                            <option value="">--Choose que--</option>
+                            <option value="q3_b">Q3_b</option>
+                             <option value="q4_b">Q4_b</option>
+                            </select>
+                            <script src="in.js"></script>
+                            <span> <input type="number" id="q3_b_id" name="q3_b" placeholder="Q3_b or Q4_b" style="height: 22px;width: 150px;"></span>
+                             </br>
+                              <br>
+
+                           <!-- <input type="text" name="Sem" placeholder="Sem" style="height: 22px;width: 200px;"><br><br> -->
+                            <input type="reset" name="" class="reset" style="border-radius:20px; height: 30px; width: 300px; margin-top: 1px" ><br>
+                </h2>          
+                </div>
+                <div class="rightr">
+                <h2>
+                   
+                  <select id="que1_a"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                     <option value="">--Choose que--</option>
+                     <option value="q5">Q5</option>
+                      <option value="q6">Q6</option>
+                     </select>
+                  <script src="in.js"></script>
+                     <span> <input type="number" id="q5_id" name="q5" placeholder="Q5 or Q6" style="height: 22px;width: 150px;"></span></br>
+                       <br>        
+         
+                <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                  <option value="">--Choose que--</option>
+                  <option value="q5_a">Q5_a</option>
+                   <option value="q6_a">Q6_a</option>
+                  </select>
+               <script src="in.js"></script>
+                    <span> 
+                    <input type="number" id="q5_a_id" name="q5_a" placeholder="Q5_a or Q6_a" style="height: 22px;width: 150px;"></span>
+                   </br>
+                    <br>
+                    <select id="que1_b"   style="height: 22px;width: 150px"  onchange="populat(this);" >
+                      <option value="">--Choose que--</option>
+                      <option value="q5_b">Q3_b</option>
+                       <option value="q6_b">Q4_b</option>
+                      </select>
+                      <script src="in.js"></script>
+                      <span> <input type="number" id="q5_b_id" name="q5_b" placeholder="Q5_b or Q6_b" style="height: 22px;width: 150px;"></span>
+                       </br>
+                        <br>
+
+                        
+                 <input type="number" name="quiz2" placeholder="quiz2" style="height: 22px;width: 150px;"><br><br>
+                 <input type="number" name="assignment2" placeholder="assignment2" style="height: 22px;width: 150px;"><br><br>
+                </h2>
+                </div>
+        </div>
+
+        </div>
+    </div>
+</form>
+<script>
+    let popup=document.getElementById("popup");
+                                       function openPopup()
+                                    {
+                                        popup.classList.add("open-popup");
+                                     }
+                                       function closePopup()
+                                        {
+                                           popup.classList.remove("open-popup");
+                                        }
+    function populate(selectObj)
+    {
+        // get the index of the selected option 
+          var idx = selectObj.selectedIndex; 
+        // get the value of the selected option 
+          var which = selectObj.options[idx].value;
+          if(which=="sub1")
+          {
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbzLMrU3FuBIKW0uoCZUjigNpnektyw5V3cQpK11dYlctsd9-fSxp_kyHhTk3eMuDyLRsg/exec'
+              const form = document.forms['google-sheet']
+  
+               form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    })
+          }
+          else if(which="sub2")
+          {
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbzLmhssqylyVg2HntoDZOE9EiyO9H5vdTQXfvyiDKKwumgejjj0IXv-zmYxN96L2tPs/exec'
+              const form = document.forms['google-sheet']
+  
+               form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           })
+          }
+
+    }
+</script>
+</body>
+</html>
+
+
